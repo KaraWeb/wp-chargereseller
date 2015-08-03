@@ -1,0 +1,604 @@
+@font-face {
+  font-family: 'BYekan';
+  src: url('../fonts/BYekan.eot?#') format('eot'),  /* IE6–8 */
+       url('../fonts/BYekan.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+       url('../fonts/BYekan.ttf') format('truetype');  /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+}
+div#charge-widget {
+	display:none;
+}
+div#charge-widget * {
+	box-sizing:border-box;
+}
+#charge-widget {
+	font-family: BYekan!important;
+	direction: rtl;
+}
+#charge-widget h2, h1 {
+	font-family: BYekan,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	line-height: 20px;
+	margin: 10px;
+	color: #ECFDFD;
+}
+#charge-widget h2 {
+	font-size: 20px;
+}
+#charge-widget h1 {
+	font-size: 27px;
+}
+#charge-widget p {
+	font-size: 13px;
+	line-height: 20px;
+	margin: 0;
+	color: #717172;
+}
+#charge-widget label {
+	color: #F5F5F5;
+	margin:0;
+	padding:0;
+}
+#charge-widget strong {
+	margin-right: 30px;
+	float: right;
+}
+#charge-widget fieldset {
+  border: 0 none;
+  padding: 7px 12px 6px;
+}
+#charge-widget div.form {
+	padding: 10px 20px;
+	direction: rtl;
+}
+#charge-widget .clear{
+	clear:both;
+}
+div#charge-body.PIN div.Magiccharge, div#charge-body.PIN div.NonCreditMTN {
+	visibility: hidden;
+}
+#charge-widget .operators{
+	float:right;
+	width:0px;
+	height:auto;
+	margin-top:110px;
+	-webkit-margin-top-collapse: discard;
+	display:none;
+}
+#charge-widget .operators div {
+	width:85px;
+	height:51px;
+	margin-right:-75px;
+	float:right;
+	cursor:pointer;
+	margin-top:-16px;
+}
+#charge-widget .operator.MTN {
+	background:url("../img/mobile-operators-left.png") no-repeat 0 -52px;
+}
+#charge-widget .operator.MCI{
+	background:url("../img/mobile-operators-left.png") no-repeat -85px -52px;
+}
+#charge-widget .operator.RTL{
+	background:url("../img/mobile-operators-left.png") no-repeat -170px -52px;
+}
+#charge-widget .operator.TAL{
+	background:url("../img/mobile-operators-left.png") no-repeat -255px -52px;
+}
+#charge-widget .operator.MTN:hover {
+	background:url("../img/mobile-operators-left.png") no-repeat 0 0;
+}
+#charge-widget .operator.MCI:hover {
+	background:url("../img/mobile-operators-left.png") no-repeat -85px 0;
+}
+#charge-widget .operator.RTL:hover {
+	background:url("../img/mobile-operators-left.png") no-repeat -170px 0;
+}
+#charge-widget .operator.TAL:hover {
+	background:url("../img/mobile-operators-left.png") no-repeat -255px 0;
+}
+#charge-widget .operator.MTN.active {
+	background:url("../img/mobile-operators-left.png") no-repeat 0 0;
+}
+#charge-widget .operator.MCI.active {
+	background:url("../img/mobile-operators-left.png") no-repeat -85px 0;
+}
+#charge-widget .operator.RTL.active {
+	background:url("../img/mobile-operators-left.png") no-repeat -170px 0;
+}
+#charge-widget .operator.TAL.active {
+	background:url("../img/mobile-operators-left.png") no-repeat -255px 0;
+}
+#charge-widget div#left{
+	width:70px;
+	height:auto;
+	float:left;
+	direction:rtl;
+}
+#charge-widget div#logo{
+	width:180px;
+	height:160px;
+	background: url("../img/logo.png") no-repeat 0 0;
+	margin:80px auto 10px;
+	cursor:pointer;
+}
+#charge-widget div#logo:hover{
+	background-position: 0 -168px;
+}
+#charge-widget div#logo:active{
+	background-position: 0 -344px;
+}
+#charge-widget div#charge-body form {
+	margin-top:15px;
+	margin-bottom:0;
+}
+#charge-widget div#charge-body div.input {
+	width:235px;
+}
+#charge-widget div#charge-body div.input.text.account, #charge-widget div#charge-body div.input.text.email {
+	display:flex;
+}
+#charge-widget div#charge-body input{
+	width:235px;
+	height:40px;
+	background-color:#f6f4f5;
+	border-radius: 10px;
+	margin:4px;
+	font-family: BYekan,Tahoma;
+	font-size:21px;
+	color:#5c5c5c;
+	padding:0 10px 0 40px !important;
+	text-align:center;
+	border-width:2px;
+	border-style: solid;
+}
+#charge-widget div#charge-body input[type="text"] {
+	letter-spacing: 2px;
+}
+#charge-widget form.MTN input {
+	border-color: #F5B51F;
+}
+#charge-widget form.MTN input[type="submit"] {
+	background-color: #FCE348!important;
+}
+#charge-widget form.MTN input[type="submit"]:hover {
+	background-color: #F5B51F!important;
+}
+#charge-widget form.MCI input {
+	border-color: #6AC3CB;
+}
+#charge-widget form.MCI input[type="submit"] {
+	background-color: #8BCFD7!important;
+}
+#charge-widget form.MCI input[type="submit"]:hover {
+	background-color: #6AC3CB!important;
+}
+#charge-widget form.RTL input {
+	border-color: #C5449F;
+}
+#charge-widget form.RTL input[type="submit"] {
+	background-color: #D293BE!important;
+}
+#charge-widget form.RTL input[type="submit"]:hover {
+	background-color: #C5449F!important;
+}
+#charge-widget form.TAL input {
+	border-color: #DE002A;
+}
+#charge-widget form.TAL input[type="submit"] {
+	background-color: #EC6F6F!important;
+}
+#charge-widget form.TAL input[type="submit"]:hover {
+	background-color: #DE002A!important;
+}
+#charge-widget div#charge-body input:hover{
+	color:#000000;
+}
+#charge-widget div#charge-body input:focus{
+	color:#000000;
+}
+#charge-widget input#dataAccountTemp{
+	background:url(../img/mobile.png) no-repeat #3e7aac;
+	background-position: 10px 7px;
+	text-align: left !important;
+	direction: ltr;
+}
+#charge-widget input#dataAccountTemp:hover{
+	background-image:url(../img/mobile-h.png);
+}
+#charge-widget input#dataAccountTemp:focus{
+	background-image:url(../img/mobile-f.png);
+}
+#charge-widget div#charge-body select#dataAmountTemp {
+	direction: ltr;
+	width:339px;
+	height:48px;
+	border: 1px solid #D6D4D5;
+	color:#5C5C5C;
+	border-radius:10px;
+	padding:5px 20px 5px 60px;
+	margin:8px;
+	box-shadow: rgba(0, 0, 0, 0.298039) 0 0 5px 0 inset;
+	background-image: url(../img/price.png);
+	background-repeat: no-repeat;
+	background-color: #F6F4F5;
+	background-position: 13px 8px;
+	font-family: BYekan,Tahoma;
+	font-size: 160%;
+	text-align: center;
+}
+#charge-widget .input.text.required.amount {
+	margin:8px 5px 2px;
+}
+#charge-widget input#EmailInput{
+	background:url(../img/email.png) no-repeat #3e7aac;
+	background-position: 10px 7px;
+	font-size:17px !important;
+}
+#charge-widget input#EmailInput:hover{
+	background-image:url(../img/email-h.png);
+}
+#charge-widget input#EmailInput:focus{
+	background-image:url(../img/email-f.png);
+}
+#charge-widget div#charge-body input[type="submit"] {
+	width:235px;
+	height:50px!important;
+	margin-top:0!important;
+    margin-right:16px;
+	padding:0!important;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -khtml-border-radius: 10px;
+	font-family: BYekan,Tahoma;
+	font-size:29px!important;
+	color:#5b5c5c;
+	cursor:pointer;
+}
+#charge-widget div#charge-body input[type="submit"]:hover {
+	text-shadow: 1px 2px 2px #ffffff;
+	box-shadow:none!important;
+}
+#charge-widget .submit input:hover {
+	text-shadow: 1px 2px 2px #ffffff;
+}
+#charge-widget div#charge-body div#MagicCharge, #charge-widget div#charge-body div#NonCreditMTN {
+	box-shadow: 0px 0px 0px #000000;
+	border-radius:0px;
+	text-align:right;
+	color: #5B5C5C;
+	font-family: BKoodakBold,Tahoma;
+	font-size:100%;
+	height:auto;
+	margin: 8px auto;
+}
+#charge-widget div#charge-body input#magiccharge, #charge-widget div#charge-body input#NonCreditMTN {
+	border-radius:5px;
+	width:10px;
+	height:10px;
+	padding:10px;
+	margin:0 5px;
+	vertical-align:sub;
+}
+#charge-widget .charge-error-message{
+	background-color: #F2DEDE;
+    border: 1px solid #EED3D7;
+    color: #B94A48;
+    border-radius: 4px;
+    margin: 10px 0;
+    padding: 4px;
+	font-family: BYekan, tahoma;
+	font-size:13px;
+	text-align: center;
+	display:block;
+}
+#charge-widget .cnsubmit {
+	padding-top: 5px;
+}
+#charge-widget .cnsubmit input, .cnsubmit button {
+    height: 36px;
+    width: 70px;
+	padding: 0;
+	font-family: BYekan,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 18px;
+	text-align: center;
+}
+#charge-widget .banksubmits {
+  margin: 20px auto;
+  width: 250px;
+  font-family: BYekan,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 13px;
+  text-align: center;
+}
+#charge-widget .banksubmits input{
+	background-image:url("../img/load.gif");
+	background-repeat: no-repeat;
+	background-position: 270px 15px;
+    direction: rtl;
+    text-align: right !important;
+    width: 300px !important;
+}
+}
+#charge-widget .input, .text{
+	width:100%;
+	clear:right;
+	margin: -4px 0;
+}
+#charge-widget .alert {
+	direction: rtl;
+	margin: 20px 10px;
+	padding: 8px;
+	border-radius: 10px;
+	font-family: BYekan,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	border: 1px solid #E6E6E4;
+}
+#charge-widget .menu {
+	float: left;
+	margin: -19px 0 0 30px;
+	position: relative;
+}
+#charge-widget .menu span{
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:13px;
+    cursor: pointer;
+	padding: 4px 30px 9px 16px;
+	margin-right:20px;
+	display: inline-block;
+	width: auto;
+	color: #FFFFFF;
+	text-align: center;
+	border-radius: 0 0 10px 10px;
+	-moz-border-radius: 0 0 10px 10px;
+    -webkit-border-radius: 0 0 10px 10px;
+    -khtml-border-radius: 0 0 10px 10px;
+}
+#charge-widget .menu span a {
+	color: #ffffff;
+	text-decoration: none;
+}
+#charge-widget span.support {
+    background: url("../img/support.png") no-repeat scroll 90% #87B43F;
+}
+#charge-widget span.help {
+    background: url("../img/help.png") no-repeat scroll 90% #098A97;
+}
+#charge-widget span.help:hover {
+    background-color: #47B7C0;
+}
+.qtip {
+	border-width: 3px;
+}
+.qtip-content {
+	font-family: 'BYekan';
+	font-size: 12px;
+	line-height: 1.2em;
+	direction: rtl;
+	text-align: right !important;
+	padding:4px 6px!important;
+}
+.qtip-content p {
+	margin:2px!important;
+    font-family: 'BYekan';
+}
+#charge-widget .bgs {
+	margin-top: -61px;
+}
+#charge-widget div.addScript {
+	position: relative;
+	left: 91%;
+	top: 1px;
+}
+#charge-widget .addScript {
+	margin: 0px;
+	width: 0px;
+}
+#charge-widget .addScript p {
+	margin: 0px;
+	width: 0px;
+}
+#charge-widget .addScript p>a>img {	
+	width: 0px;
+	height: 0px;
+}
+#charge-widget .addScript a>img {
+	margin-top: 3px;
+}
+#charge-widget div #desc h1, div #desc p{
+	font-size: 13px;
+	font-weight: normal;
+	font-family: BYekan,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	line-height: 20px;
+	margin: 5px;
+	color: #FFFFFF;
+	text-align: center;
+	text-shadow: 0px 2px 1px #BBBABA;
+}
+#charge-widget div #desc h1 {
+	font-size: 16px;
+}
+#charge-widget form label.alert{
+	display: block;
+    padding: 20px;
+	border: none;
+}
+#charge-widget form.MTN div.banks ul li {
+	border:2px solid #FFBD00;
+}
+#charge-widget form.MCI div.banks ul li {
+	border:2px solid #3bb3c4;
+}
+#charge-widget form.RTL div.banks ul li {
+	border:2px solid #C5449F;
+}
+#charge-widget form.TAL div.banks ul li {
+	border:2px solid #DE002A;
+}
+#charge-widget div .loading{
+	display: none;
+}
+#charge-widget div.banks {
+	text-align:right;
+	padding:5px 17px;
+}
+#charge-widget div.banks p {
+	text-align:right;
+}
+#charge-widget div.banks p i {
+	font-style:normal;
+	padding-right:10px;
+}
+#charge-widget div.banks ul, div.banks li {
+	margin:-1px;
+	padding:0;
+	list-style-type:none;
+	cursor:pointer;
+}
+#charge-widget div.banks li {
+	border-radius:3px;
+	border:2px solid #B9B9B9;
+	display:inline-block;
+	margin:0px 4x;
+}
+#charge-widget div.banks li i {
+	background-color:#FFFFFF;
+	background-image:url(../img/banks_big.png);
+	background-repeat:no-repeat;
+	font-family:Tahoma;
+	font-size:0px;
+	display:block;
+	width:25px;
+	height:25px;
+}
+#charge-widget div.banks li.active {
+	border:2px solid #C44E06 !important;
+}
+#charge-widget div.banks li.active i {
+	background-color:#FCE4A1;
+}
+#charge-widget div.Magiccharge, #charge-widget div.NonCreditMTN {
+	text-align: right;
+	padding: 0 5px;
+	font-size:11px;
+}
+#charge-widget div.Magiccharge {
+	margin-top:2px;	
+}
+#charge-widget #AmountTopUpMTNTemp {
+	display:none;
+}
+#charge-widget div#charge-body.TopUp form.MTN #AmountTopUpMTNTemp {
+	display:block!important;
+}
+#charge-widget div#charge-body.TopUp form.MTN #AmountTemp {
+	display:none!important;
+}
+#charge-widget form.MCI div.Magiccharge, form.RTL div.Magiccharge, form.TAL div.Magiccharge, #charge-widget form.MCI div.NonCreditMTN, form.RTL div.NonCreditMTN, form.TAL div.NonCreditMTN {
+	visibility:hidden;
+}
+#charge-widget form div.submit input {
+	border-radius:3px;
+	color:#FFFFFF;
+	cursor:pointer;
+}
+#charge-widget form.MTN div.submit input {
+	background-color:#FFBD00;
+	border:1px solid #F5B51F;
+}
+#charge-widget .show {
+	display: block !important;
+}
+#charge-widget .hide{
+	display: none !important;
+}
+#charge-widget div.operators.TopUp div.TAL {
+	display:none;
+}
+#charge-widget .irs {
+	font-family: 'BYekan', tahoma;
+}
+#charge-widget .irs-from, .irs-to, .irs-single {
+	font-size:12px!important;
+	top:-4px!important;
+	left:16px;
+	font-family:'BYekan';
+}
+#charge-widget .irs .irs-min, #charge-widget .irs .irs-max {
+	color:#ededed;
+	font-family:'BYekan';
+}
+div#charge-widget {
+	left:-324px;
+	bottom:20px;
+	position:fixed;
+	z-index:15000;
+}
+div#charge-widget div#charge-button {
+	position: absolute;
+	right:-68px;
+	top:30px;
+	cursor:pointer;
+	padding:10px;
+	border-radius:0 0 10px 10px;
+	font-size:13px;
+	color:#F5F5F5;
+	height:39px;
+	line-height:25px;
+	font-family:'BYekan';
+}
+div#charge-widget div#charge-body {
+	width:324px;
+	display: inline-block;
+	border-radius: 0 0 10px;
+	padding:5px 60px 10px 5px;
+	box-shadow:-2px 4px 4px 0px #cdcdcd;
+}
+#charge-widget .rotate {
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+
+  /* also accepts left, right, top, bottom coordinates; not required, but a good idea for styling */
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+
+  /* Should be unset in IE9+ I think. */
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+#charge-widget div#charge-kind {
+	display:block;
+	height:30px;
+	margin-left:20px;
+}
+#charge-widget div#charge-kind span {
+	display:inline-block;
+	width:25px;
+	height:25px;
+	background-color:#000000;
+	opacity:0.4;
+	margin:2px;
+	border-radius:3px;
+	float:left;
+	font-size:17px;
+	cursor:pointer;
+	color:#FFFFFF;
+}
+#charge-widget div#charge-kind span:hover {
+	opacity:0.6
+}
+#charge-widget div#charge-kind span.active {
+	opacity:0.8
+}
+#charge-widget div#charge-kind p {
+	margin: 5px 81px;
+	padding-top: 5px;
+	text-align: left;
+	font-family:BYekan; 
+}
+.qtip-content {
+	text-align: justify!important;
+	direction: rtl!important;
+}

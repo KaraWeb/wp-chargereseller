@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2014 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000">
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150"/>
+<missing-glyph horiz-adv-x="1000"/>
+<glyph glyph-name="credit-card" unicode="" d="m982 779q37 0 63-27t26-63v-678q0-37-26-63t-63-27h-893q-36 0-63 27t-26 63v678q0 37 26 63t63 26h893z m-893-72q-7 0-12-5t-6-13v-125h929v125q0 8-5 13t-13 5h-893z m893-714q7 0 13 5t5 13v339h-929v-339q0-8 6-13t12-5h893z m-839 71v72h143v-72h-143z m214 0v72h214v-72h-214z" horiz-adv-x="1071.4"/>
+<glyph glyph-name="flash" unicode="" d="m598 349q23-12 26-39t-16-45l-391-370q-14-14-35-14-28 0-43 24t-6 49l113 270-220 128q-22 12-25 38t15 45l391 370q11 14 35 14 21 0 37-16t15-36q0-13-5-23l-111-267z" horiz-adv-x="624"/>
+<glyph glyph-name="flash-1" unicode="" d="m494 534q10-11 4-24l-302-646q-7-14-23-14-2 0-8 1-9 3-14 11t-3 16l110 451-226-56q-2-1-7-1-10 0-17 7-10 8-7 21l112 461q2 8 9 13t15 5h183q11 0 18-7t7-17q0-4-2-10l-96-258 221 54q5 2 7 2 11 0 19-9z" horiz-adv-x="500"/>
+</font>
+</defs>
+</svg>
