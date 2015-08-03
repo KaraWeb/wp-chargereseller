@@ -1,0 +1,1 @@
+# chargereseller-wordpress-plugin
