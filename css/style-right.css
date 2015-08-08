@@ -30,11 +30,9 @@ div#charge-widget * {
 	font-size: 13px;
 	line-height: 20px;
 	margin: 0;
-	color: #717172;
 	font-family:'BYekan';
 }
 #charge-widget label {
-	color: #F5F5F5;
 	margin:0;
 	padding:0;
 }
@@ -546,7 +544,6 @@ div#charge-widget div#charge-button {
 	padding:10px;
 	border-radius:0 0 10px 10px;
 	font-size:13px;
-	color:#F5F5F5;
 	height:39px;
 	line-height:25px;
 	font-family:BYekan;

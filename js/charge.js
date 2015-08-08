@@ -2,9 +2,9 @@
 	// $("div#charge-widget").css( "display", "block");
 	$("div#charge-widget").css("top", WidgetVerticalPosition).css( "display", "block");
 	if (WidgetHorizontalPosition == "right") {
-		$('link[href="widget-style.css"]').attr('href',PluginUrl + '/chargereseller_widget/css/style-right.css');
+		$('link[href="widget-style.css"]').attr('href',PluginUrl + '/wp-chargereseller/css/style-right.css');
 	} else {
-		$('link[href="widget-style.css"]').attr('href', PluginUrl + '/chargereseller_widget/css/style-left.css');
+		$('link[href="widget-style.css"]').attr('href', PluginUrl + '/wp-chargereseller/css/style-left.css');
 	}
 	
 	
@@ -340,4 +340,5 @@
 	
 	$('div#charge-widget div#charge-button').css({"background-color": WidgetColor});
 	$('div#charge-widget div#charge-body').css({"background-color": WidgetColor});
+    $('div#charge-widget').css({"color": Textcolor});
 });
