@@ -135,7 +135,7 @@
 		} else {
 			action = 'Topup';
 		}
-		$('form#chargeform').attr('action', 'http://chr724.ir/services/EasyCharge/' + action);
+		$('form#chargeform').attr('action', 'https://chr724.ir/services/EasyCharge/' + action);
 		checkForm();
 		if (sendForm) {
 			$('form#chargeform').submit();
